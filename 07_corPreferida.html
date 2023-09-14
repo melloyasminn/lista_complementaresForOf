@@ -8,11 +8,16 @@
     */
 
     //Entrada
-
-
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    const coresFav = [];
     //Processamento
-
-
+    for (const cor of cores) {
+        const gosta = prompt(`Você gosta da cor ${cor}? S-Sim | N-Não`).toUpperCase();
+        if (gosta == "S") {
+            coresFav.push(cor);
+        }
+    }
+    alert(`Lista das cores favoritas: ${coresFav.join(", ")}\nQuantidade de cores favoritas da lista apresentada: ${coresFav.length}`)
     //Saída
 
 </script>

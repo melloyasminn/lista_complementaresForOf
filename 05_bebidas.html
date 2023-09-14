@@ -7,11 +7,16 @@
     */
 
     //Entrada
-
-
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    let alcool = prompt(`Qual das bebidas possui álcool? ${bebidas.join(", ")}`)
+    let menorDezoito = []
     //Processamento
-
-
+    for (const bebida of bebidas) {
+       if(bebida != alcool) {
+        menorDezoito.push(bebida)
+       } 
+    }
+alert(` Bebidas com álcool: ${alcool} \nBebidas sem álcool${menorDezoito.join(", ")}`)
     //Saída
 
 </script>
